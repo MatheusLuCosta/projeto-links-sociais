@@ -20,7 +20,7 @@
 body {
     min-height: 100vh;
     min-width: 100vw;
-    background: var(--cor-de-fundo);
+    background: linear-gradient(0, #120c56, #000000);
     overflow: hidden;
 }
 
@@ -38,9 +38,9 @@ body {
     flex-direction: column;
     text-align: center;
     gap: 1rem;
-    border: 1px solid var(--cor-de-fundo2);
-    background: var(--cor-de-fundo2);
+    background: linear-gradient(to bottom, #120c56, #000000);
     border-radius: 14px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.116);
     height: 600px;
     margin: 20px;
 }
@@ -52,6 +52,12 @@ body {
     display: flex;
     align-self: center;
     margin-top: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.foto-perfil:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #00d0ff;
 }
 
 h1 {
