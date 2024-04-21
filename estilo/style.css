@@ -20,7 +20,7 @@
 body {
     min-height: 100vh;
     min-width: 100vw;
-    background: linear-gradient(0, #120c56, #000000);
+    background: var(--cor-de-fundo);
     overflow: hidden;
 }
 
@@ -38,7 +38,7 @@ body {
     flex-direction: column;
     text-align: center;
     gap: 1rem;
-    background: linear-gradient(to bottom, #120c56, #000000);
+    background: var(--cor-de-fundo2);
     border-radius: 14px;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.116);
     height: 600px;
