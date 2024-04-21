@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/animacao.css">
+    <title>Perfil Links</title>
+</head>
+
+<body>
+        <main id="anima">
+            <div class="rains-container">
+                <div class="rain"></div>
+                <div class="rain"></div>
+                <div class="rain"></div>
+                <div class="rain"></div>
+                <div class="rain"></div>
+                <div class="rain"></div>
+                <div class="rain"></div>
+                <div class="rain"></div>
+                <div class="rain"></div>
+                <div class="rain"></div>
+                <div class="rain"></div>
+                <div class="rain"></div>
+                <div class="rain"></div>
+                <div class="rain"></div>
+                <div class="rain"></div>
+                <div class="rain"></div>
+                <div class="rain"></div>
+                <div class="rain"></div>
+                <div class="rain"></div>
+                <div class="rain"></div>
+            </div>
+        </main>
+    <main id="container">
+        <section class="conteudo__container">
+            <img class="foto-perfil" src="img/matheus-176.jpg" alt="Foto Matheus">
+            <h1>Matheus Lustosa</h1>
+            <p>Fortaleza-CE, Brasil</p>
+            <q>Desenvolvedor Front-end e amante do conhecer.</q>
+
+            <ul class="links">
+                <li class="links-pessoais">
+                    <a href="https://github.com/MatheusLuCosta" target="_blank">GitHub</a>
+                    <a href="https://www.instagram.com/matheuslucosta/" target="_blank">Instagram</a>
+                    <a href="https://www.linkedin.com/in/matheus-dev-front-end/" target="_blank">LinkdIn</a>
+                    <a href="#">Twitter</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        const rains = document.querySelectorAll(".rain");
+        const getRandomNumber = (min, max)=>{
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+        rains.forEach(rain=>{
+            rain.style = `--rain-delay:${getRandomNumber(0, 1000)}ms`;
+        })
+    </script>
+</body>
+
+</html>
